@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Area and Perimeter</title>
+<style>
+#Props {
+    color:#800000;
+    font-family: Comic Sans MS;
+    font-size: 24px;
+}
+#MiniProps {
+    color:#800000;
+    font-family: Comic Sans MS;
+    font-size: 30px;
+    text-align:center;
+}
+#Decs {
+    color:#000099;
+    font-family: Comic Sans MS;
+}    
+#a {
+    background-color:#00802b;
+    border-color:#003311;
+    background-size:100px;
+    border-style:ridge;
+    border-width:5px;
+    text-align: center;
+    width: 500px;
+    height:200px;
+    margin-top:20px;
+}
+#b {
+    background-color:#00802b;
+    border-color:#003311;
+    background-size:100px;
+    border-style:ridge;
+    border-width:5px;
+    text-align: center;
+    width: 500px;
+    height:200px;
+    margin-top:20px;
+}
+#c {
+    background-color:#00802b;
+    border-color:#003311;
+    background-size:100px;
+    border-style:ridge;
+    border-width:5px;
+    text-align: center;
+    width: 500px;
+    height:200px;
+    margin-top:20px;
+}
+#d {
+    background-color:#00802b;
+    border-color:#003311;
+    background-size:100px;
+    border-style:ridge;
+    border-width:5px;
+    text-align: center;
+    width: 500px;
+    height:200px;
+    margin-top:20px;
+}
+#e {
+    background-color:#00802b;
+    border-color:#003311;
+    background-size:100px;
+    border-style:ridge;
+    border-width:5px;
+    text-align: center;
+    width: 500px;
+    height:200px;
+    margin-top:20px;
+}
+#f {
+    background-color:#00802b;
+    border-color:#003311;
+    background-size:100px;
+    border-style:ridge;
+    border-width:5px;
+    text-align: center;
+    width: 500px;
+    height:200px;
+    margin-top:20px;
+}
+#abcdef {
+    padding-left: 450px;
+}
+.blue {
+    background-color:#99ccff;
+}
+</style>
+
+
+
+     <script language="javascript">
+     function calculateArea(){
+     var area= (document.form.Length.value)*(document.form.Width.value)
+     document.form.area.value=area;
+     }
+     function calculatePerimeter(){
+     var perimeter= parseFloat(document.form.Length.value) + parseFloat(document.form.Width.value) + parseFloat(document.form.Length.value) + parseFloat(document.form.Width.value)
+     document.form.perimeter.value=perimeter;
+     }
+     function calculateVolume(){
+     var volume= (document.form2.Length.value)*(document.form2.Width.value)*(document.form2.Height.value)
+     document.form2.volume.value=volume;
+     }
+     function calculateSurfaceArea(){
+          var SA= parseFloat(document.form2.Height.value) * parseFloat(document.form2.Length.value)+ parseFloat(document.form2.Height.value) * parseFloat(document.form2.Width.value) +parseFloat(document.form2.Length.value)*parseFloat(document.form2.Width.value)+parseFloat(document.form2.Height.value) * parseFloat(document.form2.Length.value)+ parseFloat(document.form2.Height.value) * parseFloat(document.form2.Width.value) +parseFloat(document.form2.Length.value)*parseFloat(document.form2.Width.value)
+     document.form2.surfaceArea.value=SA;
+     }
+     function calculateCircumference(){
+        var circumference= (2)*(Math.PI)*(document.form3.Radius.value)
+        document.form3.circumference.value=circumference;
+     }
+     function calculateArea2(){
+        var area2= (document.form3.Radius.value)*(document.form3.Radius.value)*(Math.PI)
+        document.form3.area2.value=area2;
+     }
+     function calculateVolume2(){
+        var volume2= (document.form4.Radius.value)*(document.form4.Radius.value)*(document.form4.Radius.value)*(4)/(3)*(Math.
+        PI)
+        document.form4.volume2.value=volume2;
+     }
+     function calculateSurfaceArea2(){
+        var surfaceArea2= (document.form4.Radius.value)*(document.form4.Radius.value)*(4)*(Math.PI)
+        document.form4.surfaceArea2.value=surfaceArea2;
+     }
+     function calculateArea3(){
+        var area3= (document.form5.Base.value)*(document.form5.Side1.value)/(2)
+        document.form5.area3.value=area3;
+     }
+     function calculatePerimeter2(){
+        var perimeter2= parseFloat(document.form5.Base.value)+parseFloat(document.form5.Side1.value)+parseFloat(document.form5.Side2.value)
+        document.form5.perimeter2.value=perimeter2;
+     }
+     function calculateVolume3(){
+        var volume3= (document.form6.Height.value)/(3)*(Math.PI)*(document.form6.Radius.value)*(document.form6.Radius.value)
+        document.form6.volume3.value=volume3;
+     }
+     function calculateSurfaceArea3(){
+        
+     }
+     </script>
+
+</head>
+<body class="blue">
+ 
+
+
+<h2 id="MiniProps">Type a Number in the Top Boxes and then Click the Buttons!</h2>
+
+<div id="abcdef">
+<div id="a">
+<h1 id="Props">Calculating Area and Perimeter of a Rectangle!</h1>
+
+<form name="form">
+    <div>
+ <input name="Length" type="number"  maxlength="350" placeholder="Length" aria-label="Length" >
+ <input name="Width" type="number" maxlength="350"  placeholder="Width" aria-label="Width"   >
+ </div>
+ <div>
+<input type="button" value="Calculate Area!" name="now" onClick="calculateArea()" >
+<input type="button" value="Calculate Perimeter!" name="now" onClick="calculatePerimeter()">
+</div>
+<div>
+<input type="number"  placeholder="Area"aria-label="Area"name="area" maxlength="350" >
+<input type="number"  placeholder="Perimeter"aria-label="Perimeter"name="perimeter" maxlength="350"  >
+</div>
+</form>
+</div>
+<div id="b">
+    <h1 id="Props">Calculating Volume and Surface Area of a Rectangular Prism!</h1>
+<form name="form2">
+    <div>
+<input name="Length" type="number"  maxlength="350" placeholder="Length" aria-label="Length" >
+<input name="Width" type="number" maxlength="350"  placeholder="Width" aria-label="Width"   >
+<input name="Height" type="number" maxlength="350"  placeholder="Height" aria-label="Height"   >
+</div>
+<div> 
+<input type="button" value="Calculate Volume!" name="now" onClick="calculateVolume()">
+<input type="button" value="Calculate Surface Area!" name="now" onClick="calculateSurfaceArea()" >
+</div>
+<div>
+<input type="number"  placeholder="Volume" aria-label="Volume3"name="volume" maxlength="350"  >
+<input type="number"  placeholder="Surface Area"aria-label="Surface Area"name="surfaceArea" maxlength="350" >
+</div>
+</form>
+</div>
+<div id="c">
+<h1 id="Props">Calculating Area and Circumference of a Circle!</h1>
+<form name="form3">
+    <div>
+<input name="Radius" type="number"  maxlength="350" placeholder="Radius" aria-label="Radius" >
+</div>
+<div>
+<input type="button" value="Calculate Circumference!" name="now" onClick="calculateCircumference()" >
+<input type="button" value="Calculate Area!" name="now" onClick="calculateArea2()">
+</div>
+<div>
+<input type="number"  placeholder="Circumference"aria-label="Circumference"name="circumference" maxlength="350" >
+<input type="number"  placeholder="Area"aria-label="Area2"name="area2" maxlength="350"  >
+</div>
+</form>
+</div>
+<div id="d">
+<h1 id="Props">Calculating Volume and Surface Area of a Sphere!</h1>
+<form name="form4">
+    <div>
+<input name="Radius" type="number"  maxlength="350" placeholder="Radius" aria-label="Radius" >
+</div>
+<div>
+<input type="button" value="Calculate Volume!" name="now" onClick="calculateVolume2()" >
+<input type="button" value="Calculate Surface Area!" name="now" onClick="calculateSurfaceArea2()">
+</div>
+<div>
+<input type="number"  placeholder="Volume"aria-label="Volume2"name="volume2" maxlength="350" >
+<input type="number"  placeholder="Surface Area"aria-label="Surface Area2"name="surfaceArea2" maxlength="350"  >
+</div>
+</form>
+</div>
+<div id="e">
+<h1 id="Props">Calculating Area and Perimeter of a Triangle!</h1>
+<form name="form5">
+<div>
+<input name="Base" type="number"  maxlength="350" placeholder="Base" aria-label="Base" >
+<input name="Side1" type="number" maxlength="350"  placeholder="Side1" aria-label="Side1"   >
+<input name="Side2" type="number" maxlength="350"  placeholder="Side2" aria-label="Side2"   >
+</div>
+<div>
+<input type="button" value="Calculate Area!" name="now" onClick="calculateArea3()" >
+<input type="button" value="Calculate Perimeter!" name="now" onClick="calculatePerimeter2()">
+</div>
+<div>
+<input type="number"  placeholder="Area"aria-label="Area3"name="area3" maxlength="350" >
+<input type="number"  placeholder="Perimeter"aria-label="Perimeter2"name="perimeter2" maxlength="350"  >
+</div>
+</form>
+</div>
+<div id="f">
+<h1 id="Props">Calculating Volume and Surface Area of a Cone!</h1>
+<form name="form6">
+<div>
+<input name="Radius" type="number"  maxlength="350" placeholder="Radius" aria-label="Radius" >
+<input name="Height" type="number" maxlength="350"  placeholder="Height" aria-label="Height"   >
+</div>
+<div>
+<input type="button" value="Calculate Volume!" name="now" onClick="calculateVolume3()">
+<input type="button" value="Calculate Surface Area!" name="now" onClick="calculateSurfaceArea3()" >
+</div>
+<div>
+<input type="number"  placeholder="Volume" aria-label="Volume3"name="volume3" maxlength="350"  >
+<input type="number"  placeholder="Surface Area"aria-label="Surface Area3"name="surfaceArea3" maxlength="350" >
+</div>
+</form>
+</div>
+</body>
+</html>
