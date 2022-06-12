@@ -1,0 +1,233 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Deccan's Homepage</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/Images/Favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.grey-orange.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+   <style>
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    .mdl-cell__title {
+      text-align: center;
+    }
+    .background-color {
+      padding-top: 0px;
+      background-color: #27399C;
+      height: 10rem;
+    }
+        .text {
+      padding-left: 20px;
+      color: white;
+
+    }
+    #form {
+      text-align: center;
+    }
+    p {
+      font-size: 20px;
+    }
+    </style>
+    <script language="javascript">
+function calculateArea3(){
+        var area3= (document.form5.Base.value)/(2)*(document.form5.Height.value)
+        document.getElementById("areaIs").innerHTML = "The Area is "+area3 ;
+     }
+     function calculatePerimeter2(){
+        var perimeter2= parseFloat(document.form5.Base.value)+parseFloat(document.form5.Side1.value)+parseFloat(document.form5.Side2.value)
+        document.getElementById("perimeterIs").innerHTML = "The Perimeter is "+perimeter2 ;
+     }
+     function calculateVolume3(){
+      s= (parseFloat(document.form6.Side1.value)+parseFloat(document.form6.Side2.value)+parseFloat(document.form6.Side3.value))/(2)
+        var volume3base= parseFloat(document.form6.Height.value)*(Math.sqrt(s*(s-parseFloat(document.form6.Side1.value))*(s-parseFloat(document.form6.Side2.value))*(s-parseFloat(document.form6.Side3.value))))
+        var volume3= Math.round(100*volume3base)/(100)
+        document.getElementById("volumeIs").innerHTML = "The Volume is "+volume3 ;
+     }
+     function calculateSurfaceArea3(){
+      s= (parseFloat(document.form6.Side1.value)+parseFloat(document.form6.Side2.value)+parseFloat(document.form6.Side3.value))/(2)
+        var surfaceArea3base= (2)*(Math.sqrt(s*(s-parseFloat(document.form6.Side1.value))*(s-parseFloat(document.form6.Side2.value))*(s-parseFloat(document.form6.Side3.value))))+(parseFloat(document.form6.Side1.value)+parseFloat(document.form6.Side2.value)+parseFloat(document.form6.Side3.value))*parseFloat(document.form6.Height.value)
+        var surfaceArea3= Math.round(100*surfaceArea3base)/(100)
+        document.getElementById("surfaceAreaIs").innerHTML = "The Surface Area is "+surfaceArea3 ;
+     }
+     </script>
+  </head>
+ <body>
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Deccan's Homepage - ShapeCalc</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/ShapeCalc.html">ShapeCalc</a>
+        <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/Rectangle.html">Rectangle</a>
+        <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/Circle.html">Circle</a>
+        <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/Triangle.html">Triangle</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Deccan's Homepage</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/ShapeCalc.html">ShapeCalc</a>
+        <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/Rectangle.html">Rectangle</a>
+        <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/Circle.html">Circle</a>
+        <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/Triangle.html">Triangle</a>
+    </nav>
+  </div>
+  <div class="background-color">
+      <h2 class="text">ShapeCalc - Triangle</h2>
+    </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--120-col mdl-shadow--2dp">
+      <div class="mdl-cell__title">
+        <h2 class="mdl-cell__title-text">Calculate Area and Perimeter of a Triangle</h2>
+      </div>
+      <form name="form5" id="form">
+<div>
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" name="Base" type="number" id="sample4">
+    <label class="mdl-textfield__label" for="box">Base</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" name="Side1" type="number" id="sample4">
+    <label class="mdl-textfield__label" for="box">Side 1</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" name="Side2" type="number" id="sample4">
+    <label class="mdl-textfield__label" for="box">Side 2</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" name="Height" type="number" id="sample4">
+    <label class="mdl-textfield__label" for="box">Height</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</div>
+<div>
+<button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"name="now" onClick="calculateArea3()">
+  Calculate Area!
+</button>
+<button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" name="now" onClick="calculatePerimeter2()">
+  Calculate Perimeter!
+  </button>
+</div>
+<div>
+<p id="areaIs"></p>
+<p id="perimeterIs"></p>
+</div>
+</form>
+    </div>
+    <div class="mdl-cell mdl-cell--120-col mdl-shadow--2dp">
+      <div class="mdl-cell__title">
+        <h2 class="mdl-cell__title-text">Calculate Volume and Surface Area of a Triangular Prism</h2>
+      </div>
+<form name="form6" id="form">
+<div>
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" name="Side1" type="number" id="sample4">
+    <label class="mdl-textfield__label" for="box">Side 1</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" name="Side2" type="number" id="sample4">
+    <label class="mdl-textfield__label" for="box">Side 2</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" name="Side3" type="number" id="sample4">
+    <label class="mdl-textfield__label" for="box">Side 3</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" name="Height" type="number" id="sample4">
+    <label class="mdl-textfield__label" for="box">Height</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</div>
+<div>
+<button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" name="now" onClick="calculateVolume3()">
+  Calculate Volume!
+</button>
+<button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" name="now" onClick="calculateSurfaceArea3()">
+  Calculate Surface Area!
+</button>
+</div>
+<div>
+<p id="volumeIs"></p>
+<p id="surfaceAreaIs"></p>
+</div>
+</form>
+    </div>
+</div>
+    </div>
+  </main>
+  </div>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75045694-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

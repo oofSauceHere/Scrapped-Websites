@@ -1,0 +1,9 @@
+https://s3-us-west-2.amazonaws.com/deccan.rocks/Index.html
+https://s3-us-west-2.amazonaws.com/deccan.rocks/MarchMadness.html
+https://s3-us-west-2.amazonaws.com/deccan.rocks/Projects.html
+https://s3-us-west-2.amazonaws.com/deccan.rocks/styles.css
+https://s3-us-west-2.amazonaws.com/deccan.rocks/About+Me.html
+https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/ShapeCalc.html
+https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/Rectangle.html
+https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/Triangle.html
+https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/Circle.html

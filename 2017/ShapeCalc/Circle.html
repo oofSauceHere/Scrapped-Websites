@@ -1,0 +1,213 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Deccan's Homepage</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/Images/Favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.grey-orange.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    .mdl-cell__title {
+      text-align: center;
+    }
+    .background-color {
+      padding-top: 0px;
+      background-color: #27399C;
+      height: 112.5px;
+    }
+    .text {
+      padding-left: 20px;
+      color: white;
+
+    }
+    #form {
+      text-align: center;
+    }
+    p {
+      font-size: 20px;
+    }
+    </style>
+    <script language="javascript">
+function calculateCircumference(){
+        var circumferencebase= (2)*(Math.PI)*(document.form3.Radius.value)
+        var circumference= Math.round(100*circumferencebase)/(100)
+        document.getElementById("circumferenceIs").innerHTML = "The Circumference is "+circumference ;
+     }
+     function calculateArea2(){
+        var area2base= (document.form3.Radius.value)*(document.form3.Radius.value)*(Math.PI)
+        var area2= Math.round(100*area2base)/(100)
+        document.getElementById("areaIs").innerHTML = "The Area is "+area2 ;
+    }
+     function calculateVolume2(){
+        var volume2base= (document.form4.Radius.value)*(document.form4.Radius.value)*(document.form4.Radius.value)*(4)/(3)*(Math.
+        PI)
+        var volume2= Math.round(100*volume2base)/(100)
+        document.getElementById("volumeIs").innerHTML = "The Volume is "+volume2 ;
+     }
+     function calculateSurfaceArea2(){
+        var surfaceArea2base= (document.form4.Radius.value)*(document.form4.Radius.value)*(4)*(Math.PI)
+        var surfaceArea2= Math.round(100*surfaceArea2base)/(100)
+        document.getElementById("surfaceAreaIs").innerHTML = "The Surface Area is "+surfaceArea2 ;
+     }
+</script>
+  </head>
+ <body>
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Deccan's Homepage - ShapeCalc</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/ShapeCalc.html">ShapeCalc</a>
+        <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/Rectangle.html">Rectangle</a>
+        <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/Circle.html">Circle</a>
+        <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/Triangle.html">Triangle</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Deccan's Homepage</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/ShapeCalc.html">ShapeCalc</a>
+        <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/Rectangle.html">Rectangle</a>
+        <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/Circle.html">Circle</a>
+        <a class="mdl-navigation__link" href="https://s3-us-west-2.amazonaws.com/deccan.rocks/ShapeCalc/Triangle.html">Triangle</a>
+    </nav>
+  </div>
+  <div class="background-color">
+      <h2 class="text">ShapeCalc - Circle</h2>
+    </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--120-col mdl-shadow--2dp">
+      <div class="mdl-cell__title">
+        <h2 class="mdl-cell__title-text">Calculate Area and Circumference of a Circle</h2>
+      </div>
+      <form name="form3" id="form">
+    <div>
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" name="Radius" type="number" id="sample4">
+    <label class="mdl-textfield__label" for="box">Radius</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</div>
+<div>
+<button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"name="now" onClick="calculateArea2()">
+  Calculate Area!
+</button>
+<button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" name="now" onClick="calculateCircumference()">
+  Calculate Circumference!
+  </button>
+</div>
+<div>
+<p id="areaIs"></p>
+<p id="circumferenceIs"></p>
+</div>
+</form>
+    </div>
+    <div class="mdl-cell mdl-cell--120-col mdl-shadow--2dp">
+      <div class="mdl-cell__title">
+        <h2 class="mdl-cell__title-text">Calculate Volume and Surface Area of a Sphere</h2>
+      </div>
+      <form name="form4" id="form">
+    <div>
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" name="Radius" type="number" id="sample4">
+    <label class="mdl-textfield__label" for="box">Radius</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</div>
+<div>
+<button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" name="now" onClick="calculateVolume2()">
+  Calculate Volume!
+</button>
+<button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" name="now" onClick="calculateSurfaceArea2()">
+  Calculate Surface Area!
+</button>
+</div>
+<div>
+<p id="volumeIs"></p>
+<p id="surfaceAreaIs"></p>
+</div>
+</form>
+    </div>
+</div>
+    </div>
+  </main>
+  </div>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75045694-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
